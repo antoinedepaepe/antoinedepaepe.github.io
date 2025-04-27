@@ -6,7 +6,7 @@ const pubs = [
       venue: '--, 2025',
       year: 2025,
       links: {
-        PAGE: 'https://arxiv.org/pdf/2504.14033',
+        PAGE: 'https://antoinedepaepe.github.io/jrm-adm-io',
         ARXIV: 'https://arxiv.org/pdf/2504.14033',
         CODE: 'https://github.com/antoinedepaepe/jrm-adm'
       }
