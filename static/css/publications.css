@@ -1,0 +1,138 @@
+:root {
+    --bg: #181818;
+    --fg: #f0f0f0;
+    --muted: #888;
+    --accent: #4a90e2;
+    --nav-bg: #1a1a1a;
+    --border: #333;
+    --btn-bg: #222;
+    --btn-border: #444;
+    --btn-hover-bg: #333;
+  }
+  
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  body {
+    font-family: sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.6;
+  }
+  
+  header {
+    background: var(--nav-bg);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  nav a {
+    color: var(--fg);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+  }
+  
+  nav a:hover,
+  nav a.active {
+    color: var(--accent);
+  }
+  
+  main.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .pub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .pub {
+    display: flex;
+    gap: 1.5rem;
+    position: relative;
+    padding-right: 5rem;
+  }
+  
+  .pub img.thumb {
+    width: 300px;
+    height: 150px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+  
+  .pub .details {
+    flex: 1;
+  }
+  
+  .pub .details h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .pub .details .authors {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+  }
+  
+  .pub .details .venue {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+  }
+  
+  .pub .details .buttons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .pub .details .buttons a {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    background: var(--btn-bg);
+    color: var(--fg);
+    border: 1px solid var(--btn-border);
+    border-radius: 4px;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  
+  .pub .details .buttons a:hover {
+    background: var(--btn-hover-bg);
+    border-color: var(--accent);
+  }
+  
+  .pub .year {
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    font-size: 3rem;
+    color: rgba(255,255,255,0.05);
+  }
+  
+  @media (max-width: 768px) {
+    main.container {
+      flex-direction: column;
+    }
+    nav {
+      flex-wrap: wrap;
+    }
+  }
+  
