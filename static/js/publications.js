@@ -1,14 +1,14 @@
 const pubs = [
     {
       thumb: '../images/admjrm.png',
-      title: 'Proximal-Enhanced Adaptive Diffusion Models for Motion-corrected Cone-beam Head CT',
+      title: 'Adaptive Diffusion Models for Motion-corrected Cone-beam Head CT',
       authors: ['Antoine De Paepe', 'Alexandre Bousse', 'Clémentine Phung-Ngoc', 'Youness Mellak', 'Dimitris Visvikis'],
       venue: '--, 2025',
       year: 2025,
       links: {
-        PAGE: 'https://antoinedepaepe.github.io/padm-io',
+        PAGE: 'https://antoinedepaepe.github.io/jrm-adm-io',
         ARXIV: 'https://arxiv.org/pdf/2504.14033',
-        CODE: 'https://github.com/antoinedepaepe/padm'
+        CODE: 'https://github.com/antoinedepaepe/jrm-adm'
       }
     },
     {
